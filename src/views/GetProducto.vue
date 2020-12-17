@@ -18,13 +18,13 @@
         <tr>
           <td>
             <div class="izquierda">
-              <form>
+              
               <ul>
                 <li><input type="text" v-model="codigo" placeholder="Codigo Producto"></li>
-                <li><button type="submit" v-on:click="consultarProductos">CONSULTAR PRODUCTO</button></li>
+                <li><button  v-on:click="consultarProductos">CONSULTAR PRODUCTO</button></li>
                 
               </ul>
-            </form>
+            
             </div>
             
           </td>
