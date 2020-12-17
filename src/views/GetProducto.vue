@@ -69,7 +69,7 @@ export default {
   methods:{
     consultarProductos: function(){
       let self = this
-      axios.get("https:/mygic-api.herokuapp.com/product/"+self.codigo)
+      axios.get("https://mygic-api.herokuapp.com/product/"+self.codigo)
         .then((result)=>{
           self.products.nombre=result.data.nombre,
           self.products.cantidad_disponible=result.data.cantidad_disponible,
