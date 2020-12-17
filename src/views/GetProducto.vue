@@ -18,10 +18,10 @@
         <tr>
           <td>
             <div class="izquierda">
-              <form>
+              <form v-on:submit.prevent="consultarProductos">
               <ul>
                 <li><input type="text" v-model="codigo" placeholder="Codigo Producto"></li>
-                <li><button v-on:click="consultarProducto">CONSULTAR PRODUCTO</button></li>
+                <li><button type="submit">CONSULTAR PRODUCTO</button></li>
                 
               </ul>
             </form>
@@ -67,7 +67,7 @@ export default {
 
   },
   methods:{
-    consultarProducto: function(){
+    consultarProductos: function(){
       let self = this
       axios.get("https:/mygic-api.herokuapp.com/product/"+self.codigo)
         .then((result)=>{
