@@ -18,10 +18,10 @@
         <tr>
           <td>
             <div class="izquierda">
-              <form v-on:submit.prevent="consultarProductos">
+              <form>
               <ul>
                 <li><input type="text" v-model="codigo" placeholder="Codigo Producto"></li>
-                <li><button type="submit">CONSULTAR PRODUCTO</button></li>
+                <li><button type="submit" v-on:click="consultarProductos">CONSULTAR PRODUCTO</button></li>
                 
               </ul>
             </form>
