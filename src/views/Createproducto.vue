@@ -45,7 +45,7 @@ export default {
       GuardarProducto:function() {
         let self = this
         
-        axios.post("https://mygic-api.herokuapp.com/product/",self.productos,{headers:{}})
+        axios.post("https://sprint2-grupo3.herokuapp.com/product/",self.productos,{headers:{}})
         .then((result)=>{
                     alert("Producto agregado correctamente")
                 })
